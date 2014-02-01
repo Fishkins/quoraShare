@@ -1,9 +1,10 @@
 {
-  "name": "quorashare",
-  "title": "Quora Share",
-  "id": "jid1-roegsJ40q6CsFg",
-  "description": "Show all Quora posts even when you aren't logged in",
-  "author": "Fishkins",
-  "license": "MPL 2.0",
-  "version": "0.1"
+    "name": "quorashare",
+    "title": "Quora Share",
+    "id": "jid1-roegsJ40q6CsFg",
+    "description": "Show all Quora posts even when you aren't logged in",
+    "author": "Fishkins",
+    "homepage": "https://github.com/Fishkins/quoraShare",
+    "license": "MPL 2.0",
+    "version": "0.1"
 }
