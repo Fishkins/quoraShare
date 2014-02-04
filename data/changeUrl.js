@@ -5,7 +5,7 @@ if (!fullUrl.contains('share=1')) {
     var hash = urlParts[1] ? '#' + urlParts[1] : '';
     var delim = begin.contains('?') ? '&' : '?';
     var newUrl = begin + delim + 'share=1' + hash;
-    history.replaceState({}, null, window.location.href + '?share=1');
+    history.replaceState({}, null, newUrl);
     window.location.reload();
 } else {
     var sideBar = document.getElementsByClassName('side_col')[1];
