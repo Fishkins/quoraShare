@@ -1,5 +1,6 @@
 var fullUrl = window.location.href;
 if (!fullUrl.contains('share=1')) {
+    // Add share=1 to reveal all posts
     var urlParts = fullUrl.split('#');
     var begin = urlParts[0];
     var hash = urlParts[1] ? '#' + urlParts[1] : '';
@@ -8,8 +9,11 @@ if (!fullUrl.contains('share=1')) {
     history.replaceState({}, null, newUrl);
     window.location.reload();
 } else {
-    var sideBar = document.getElementsByClassName('side_col')[1];
-    if (sideBar && sideBar.id) {
-	sideBar.parentNode.removeChild(sideBar);
-    }
+    // Remove login sidebar since it's now unnecessary
+    document.addEventListener('DOMContentLoaded', function() {
+	var sideBar = document.getElementsByClassName('side_col')[1];
+	if (sideBar && sideBar.id) {
+	    sideBar.parentNode.removeChild(sideBar);
+	}
+    });
 }
