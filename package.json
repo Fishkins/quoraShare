@@ -6,5 +6,6 @@
     "author": "Fishkins",
     "homepage": "https://github.com/Fishkins/quoraShare",
     "license": "MPL 2.0",
+    "main": "lib/main.js",
     "version": "0.2.0"
 }
