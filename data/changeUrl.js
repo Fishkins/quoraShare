@@ -1,10 +1,10 @@
 var fullUrl = window.location.href;
-if (!fullUrl.contains('share=1')) {
+if (!fullUrl.includes('share=1')) {
     // Add share=1 to reveal all posts
     var urlParts = fullUrl.split('#');
     var begin = urlParts[0];
     var hash = urlParts[1] ? '#' + urlParts[1] : '';
-    var delim = begin.contains('?') ? '&' : '?';
+    var delim = begin.includes('?') ? '&' : '?';
     var newUrl = begin + delim + 'share=1' + hash;
     history.replaceState({}, null, newUrl);
     window.location.reload();
