@@ -1,4 +1,6 @@
-var main = require("./main");
+"use strict";
+
+var main = require("../lib/main");
 
 exports["test main"] = function(assert) {
   assert.pass("Unit test running!");
