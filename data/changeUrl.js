@@ -1,3 +1,5 @@
+"use strict";
+
 var fullUrl = window.location.href;
 if (!fullUrl.includes('share=1')) {
     // Add share=1 to reveal all posts
